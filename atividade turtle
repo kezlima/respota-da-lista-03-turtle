@@ -1,0 +1,325 @@
+'''import turtle
+#questão 01 do exercício001 diminuindo a quantidade de forward
+
+turtle = turtle.Turtle()
+turtle.shape('turtle')
+#turtle.forward(100)
+for i in range(4):
+    turtle.forward(100)
+    turtle.left(90)
+
+
+#questão 02 2) Faça a tartaruga virar para a direita
+
+import turtle
+turtle = turtle.Turtle()
+turtle.shape('turtle')
+for i in range(4):
+    turtle.forward(100)
+    turtle.right(90)#mudando para a direita
+
+#questão 03 3) Altere o comprimento dos lados do quadrado
+
+import turtle
+turtle = turtle.Turtle()
+turtle.shape('turtle')
+for i in range(4):
+    turtle.forward(80)#mudando o comprimento
+    turtle.right(90)
+
+
+#questão 04 4) Transforme o quadrado em um retângulo
+     
+import turtle
+turtle = turtle.Turtle()
+turtle.shape('turtle')
+for i in range(2):
+    turtle.forward(80)#mudando o comprimento
+    turtle.right(90)
+    turtle.forward(200)
+    turtle.right(90)'''
+
+#como fazer um quadrado:
+'''turtle.forward(100)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.forward(100)
+turtle.left(90)'''
+
+#lista 2 da atividade
+
+#1) Mude a cor da linha
+#2) Mude o formato da tartaruga
+#3) Mude o tamanho do quadrado
+
+'''import turtle
+turtle.shape('turtle')
+
+turtle = turtle.Turtle()
+turtle.color('blue')#mudando a cor
+turtle.forward(200)#mudando o tamanho do quadrado para 200
+turtle.left(90)
+turtle.forward(200)
+turtle.left(90)
+turtle.forward(200)
+turtle.left(90)
+turtle.forward(200)'''
+
+#lista 03 da atividade
+
+#1) Mude/defina a forma da tartaruga
+#2) Mude a ordem das cores
+#3) Mude a largura da linha
+#4) Faça a tartaruga desenhar dois quadrados
+
+'''import turtle
+turtle.shape('turtle')#mudando para aforma da tartaruga
+turtle = turtle.Turtle()
+turtle.pensize(8)#largura mudada
+
+for color in ['black', 'blue', 'pink', 'red']:#mudandoa ordem das cores
+    turtle.color(color)
+    turtle.forward(100)
+    turtle.right(90)
+    
+turtle.penup()
+turtle.forward(200)
+turtle.pendown()
+
+for color in ['black', 'blue', 'pink', 'red']:#mudandoa ordem das cores
+    turtle.color(color)
+    turtle.forward(100)#mudandoa largura da linha
+    turtle.right(90)'''
+
+#lista 04
+#1) Acrescente ao menos mais duas cores à lista de cores possíveis
+#Veja os nomes de cores válidos em: https://pt.wikipedia.org/wiki/Lista_de_cores
+#(coluna Nome Web)
+#2) Faça o triângulo apontar para cima
+#3) Remova a cor vermelha da lista de cores possíveis
+#4) Mude a largura da linha
+
+'''import turtle
+import random
+
+#turtle = turtle.Turtle()
+turtle.pensize(8)#largura mudada
+colors = [ 'purple', 'blue','black',"white"]#black e white adicionados e removendo o red
+#coloando triangulo apontar para cima trocando right por left
+for i in range(3):
+    color = random.choice(colors)
+    turtle.color(color)
+    turtle.left(120)
+    turtle.forward(100)'''
+
+#lista 05 :
+
+""" 
+ Exercícios 
+  
+ 1) Aumente o tamanho do envelope 
+ 2) Use formas diferentes da tartaruga enquanto faz a aba e enquanto faz o corpo 
+ 3) Deixe o envelope colorido 
+ 4) Reduza o aba do envelope 
+ """ 
+  
+'''import turtle 
+
+import random
+  
+turtle = turtle.Turtle() 
+colors = [ 'purple','blue','black','green']#cores adicionadas
+
+for _ in [1, 2, 3, 4]: 
+   turtle.forward(100) #aumentando o quadrado
+   turtle.right(90)
+   color = random.choice(colors)
+   turtle.color(color) 
+  
+
+
+for _ in [1, 2, 3]: 
+     turtle.forward(90)#diminuindo a aba do envelope para 90
+     turtle.right(120) 
+     turtle.shape('turtle')
+     color = random.choice(colors)
+     turtle.color(color) '''
+
+
+#questão 06
+
+"""
+Exercicios
+
+1) Era para ser um envelope. Mas saiu errado. Corrija.
+"""
+#erro corrigido
+'''import turtle
+
+turtle = turtle.Turtle()
+turtle.color('green')
+
+for _ in [1, 2, 3]:
+    turtle.forward(100)
+    turtle.right(120)
+
+for _ in [1, 2, 3, 4]:
+  turtle.forward(100) 
+  turtle.right(90)'''
+
+
+
+"""
+questão 07:
+
+Exercicios:
+
+1) Mude a distancia entre as lentes dos óculos
+2) Mude o tamanho das lentes
+"""
+
+
+
+'''import turtle
+
+turtle = turtle.Turtle()
+turtle.color('green')
+
+for _ in range(4):
+    turtle.left(90)
+    turtle.backward(80)#mudando tamanho da lente
+
+turtle.backward(50)
+turtle.backward(80)#diminuindo a distância das lentes para 80
+turtle.right(90)
+
+for _ in range(3):
+  turtle.forward(80)#mudando tamanho da lente
+  turtle.left(90) '''
+
+
+#questão 08
+
+"""
+Exercicios
+
+1) Acrescente cores
+2) Mude a largura da linha
+3) Aumente a quantidade de linhas
+"""
+
+'''import turtle
+import random
+
+turtle = turtle.Turtle()
+
+colors = ['purple', 'blue', 'yellow', 'green', 'pink','black','red','brown']#acrescentando:black,red,brown
+for _ in range (12):
+    color = random.choice(colors)
+    turtle.color(color)
+    turtle.forward(150)
+    turtle.backward(150)
+    turtle.right(45)
+    turtle.color(color)
+    turtle.forward(150)
+    turtle.backward(150)
+    turtle.right(30)#aumentando o numero de linhas em um angulo menor'''
+
+
+#questão09
+"""
+Exercicios:
+
+1) Faça cada passo da tartaruga ter uma cor diferente
+2) Aumente/diminua o diâmetro do círculo
+"""
+
+'''import turtle
+
+import random
+
+turtle = turtle.Turtle()
+colors = ['purple', 'blue', 'yellow', 'green', 'pink','black','red','brown']
+
+for c in range(360):
+    color = random.choice(colors)
+    turtle.color(color)
+    
+    turtle.forward(1)
+    turtle.right(1)'''
+
+#questão10
+"""
+Exercícios
+
+1) Faça cada quadrado ter uma cor
+2) Faça cada quadrado com um formato diferente da tartaruga
+3) Faça os quadrados não se tocarem
+4) Desenhe um quadrado maior ao redor dos demais quadrados
+"""
+
+import turtle
+
+turtle = turtle.Turtle()
+
+for _ in range(4):
+    turtle.shape("circle")
+    turtle.color("red")
+    turtle.forward(100)
+    turtle.right(90)
+
+turtle.left(90)    
+turtle.penup()
+turtle.forward(120)
+for _ in range(4):
+   turtle.shape("square")
+   turtle.pendown()
+   turtle.color('purple')
+   turtle.left(90)
+   turtle.forward(100)
+
+turtle.right(90)
+turtle.penup()
+turtle.forward(10)  
+
+for _ in range(4):
+   turtle.shape("arrow")
+   turtle.pendown()
+   turtle.color('blue')
+   turtle.forward(100)
+   turtle.right(90)
+
+turtle.left(90)
+turtle.penup()
+
+turtle.forward(150)  
+
+for _ in range(4):
+   turtle.shape("triangle")
+   turtle.pendown()
+   turtle.color('green')
+   turtle.left(90)
+   turtle.forward(100)
+
+turtle.penup()
+
+turtle.right(90)
+
+turtle.forward(300)
+turtle.pendown()
+
+
+for _ in range(4):
+   
+   turtle.shape("turtle")
+   turtle.color('brown')
+   turtle.right(90)
+   turtle.forward(500)
+
